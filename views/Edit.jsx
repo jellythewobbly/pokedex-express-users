@@ -4,7 +4,7 @@ class Edit extends React.Component {
   render() {
     return (
       <html>
-        <head />
+        <head></head>
         <body>
           <h4>Editing: {this.props.pokemon.name}</h4>
           <form
@@ -48,41 +48,6 @@ class Edit extends React.Component {
                 name="weight"
                 type="text"
                 defaultValue={this.props.pokemon.weight}
-              />
-            </div>
-            <div className="pokemon-attribute">
-              candy:<input
-                name="candy"
-                type="text"
-                defaultValue={this.props.pokemon.candy}
-              />
-            </div>
-            <div className="pokemon-attribute">
-              candy_count:<input
-                name="candy_count"
-                type="text"
-                defaultValue={this.props.pokemon.candy_count}
-              />
-            </div>
-            <div className="pokemon-attribute">
-              egg:<input
-                name="egg"
-                type="text"
-                defaultValue={this.props.pokemon.egg}
-              />
-            </div>
-            <div className="pokemon-attribute">
-              avg_spawns:<input
-                name="avg_spawns"
-                type="text"
-                defaultValue={this.props.pokemon.avg_spawns}
-              />
-            </div>
-            <div className="pokemon-attribute">
-              spawn_time:<input
-                name="spawn_time"
-                type="text"
-                defaultValue={this.props.pokemon.spawn_time}
               />
             </div>
             <input name="submit" type="submit" />
